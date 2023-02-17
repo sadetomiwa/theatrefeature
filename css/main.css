@@ -1,36 +1,146 @@
-. {
+* {
   margin: 0;
 }
 
-
+/* .area-border { */
+/* border: 2px solid black; */
+/* } */
 
 .container {
-  height: 100vh;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 50px 0.6fr 1.4fr 0.5fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "navbar"
-    "Hero-pic"
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: inherit;
+  /* grid-template-columns: 100%; */
+  /* grid-template-rows: 50px 0.6fr 1.4fr 0.5fr; */
+  /* grid-auto-columns: 1fr; */
+  /* gap: 0px 0px; */
+  /* grid-auto-flow: row; */
+  /* grid-template-areas: */
+  /* "navbar"
+    "Heropic"
     "cstuff"
-    "Footer";
+    "Footer"; */
+
+
 }
 
 .navbar {
   grid-area: navbar;
+  display: flex;
+  background-color: black;
+  top: 0;
+  position: sticky;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
 
-.Hero-pic {
-  grid-area: Hero-pic;
+.title {
+  color: white;
 }
+
+.navbar>a {
+  text-decoration: none;
+  color: white;
+}
+
+.Heropic {
+  grid-area: Heropic;
+ 
+}
+
+#heroPic {
+  display: flex;
+  width: 100%;
+  height: 700px;
+}
+
 
 .cstuff {
   grid-area: cstuff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+
+
+
+
+
 }
+
+.middle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  row-gap: 40px;
+  justify-content: space-evenly;
+  width: 1000px;
+  height: auto;
+  align-items: center;
+
+
+
+}
+
+
+
+
+.showtimes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 900px
+}
+
+.descip {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+
+}
+
+button {
+  height: 70px;
+  width: 200px;
+  background-color: gold;
+}
+
+
+
+.date {
+  display: grid;
+  width: 55%;
+  background-color: rgb(240, 240, 240);
+  border: 2px solid black;
+  margin: 60px;
+  padding: 14px
+}
+
+
+
+
+
+
 
 .Footer {
   grid-area: Footer;
+  display: grid;
+  background-color: black;
+  height: auto;
+  color: white;
+
+}
+
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 40px;
+
+
 }
