@@ -1,0 +1,36 @@
+. {
+  margin: 0;
+}
+
+
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 50px 0.6fr 1.4fr 0.5fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "navbar"
+    "Hero-pic"
+    "cstuff"
+    "Footer";
+}
+
+.navbar {
+  grid-area: navbar;
+}
+
+.Hero-pic {
+  grid-area: Hero-pic;
+}
+
+.cstuff {
+  grid-area: cstuff;
+}
+
+.Footer {
+  grid-area: Footer;
+}
